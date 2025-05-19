@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Poker AI Dashboard</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.min.js"></script>
+</head>
+<body>
+  <h1>Live Poker AI Dashboard</h1>
+  <div>
+    <p>Hænder behandlet: <span id="handsProcessed">0</span></p>
+    <p>Seneste strategi-feedback: <span id="strategyFeedback">Ingen feedback endnu</span></p>
+  </div>
+  <script>
+    var socket = io();
+    socket.on('update_metrics', function(data) {
+      document.getElementById("handsProcessed").innerText = data.hands_processed;
+      document.getElementById("strategyFeedback").innerText = data.last_strategy_feedback;
+    });
+  </script>
+</body>
+</html>
