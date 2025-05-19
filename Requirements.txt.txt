@@ -1,0 +1,26 @@
+# Flask for webserver and API
+Flask==2.2.5  # Låst til en stabil version
+
+# Flask-SocketIO for real-time communication
+Flask-SocketIO[async]>=5.0.0  # Understøtter flere async-modes
+
+# Eventlet for optimal asynkron håndtering
+eventlet==0.33.0  # Stabil version til Flask-SocketIO
+
+# PyTorch (since TensorFlow is not supported)
+torch==2.1.0  # Mindre version for stabilitet
+
+# NumPy for numeriske beregninger
+numpy>=1.21.0
+
+# Treys – Poker hånd evaluator
+treys  # Ingen versionslock, da den er stabil
+
+# Streamlit for dashboard
+streamlit>=1.0.0
+
+# Requests – for at lave HTTP-forespørgsler
+requests>=2.25.0
+
+# 📊 Matplotlib til grafer
+matplotlib>=3.0.0
