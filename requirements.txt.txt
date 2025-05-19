@@ -1,0 +1,21 @@
+# Flask til webserver og API
+Flask>=2.0.0
+
+# Flask-SocketIO til real-time kommunikation (du kan også vælge eventlet eller gevent som asynkrone servere)
+Flask-SocketIO>=5.0.0
+eventlet>=0.30.0
+
+# TensorFlow til deep learning (sørg for, at din Python-version understøttes af den angivne TensorFlow-version)
+tensorflow>=2.10.0
+
+# NumPy til numerisk beregning og datahåndtering
+numpy>=1.21.0
+
+# Treys – poker hand evaluator (installeres som pip-package "treys")
+treys
+
+# Streamlit til et alternativt interaktivt dashboard (hvis du vil køre et Streamlit-dashboard)
+streamlit>=1.0.0
+
+# Requests – til at lave HTTP-forespørgsler fra Streamlit (eller andre klient-applikationer)
+requests>=2.25.0
