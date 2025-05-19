@@ -1,4 +1,0 @@
-streamlit
-treys
-pandas
-altair
